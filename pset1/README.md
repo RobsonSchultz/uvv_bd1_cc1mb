@@ -1,5 +1,10 @@
 # PSET - Banco de Dados e Diagrama Relacional (Lojas UVV)
 
+## Aluno - Robson Júnior Schultz Dias
+## Turma - CC1Mb
+## Professor - Abrantes Araújo Silva Filho
+## Monitora - Suellen Miranda Amorim
+
 Este repositório contém o projeto de um Banco de Dados para as lojas da UVV. O objetivo deste PSET é demonstrar o conhecimento e habilidades relacionadas ao projeto e modelagem de um banco de dados específico para as lojas da Universidade Vila Velha (UVV).
 
 ## Conteúdo do Repositório
