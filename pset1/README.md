@@ -21,4 +21,4 @@ O repositório possui os seguintes arquivos:
 
 Certifique-se de ter o software adequado instalado em seu ambiente para executar o script SQL e visualizar o diagrama relacional.
 
-<div align="center"><img src="https://i.ibb.co/ZVqq997/Captura-de-tela-2023-05-27-091248.png" width="700px"></div>
+<div align="center"><img src="https://i.imgur.com/Zf6kRd5.png" width="700px"></div>
