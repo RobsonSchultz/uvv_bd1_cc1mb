@@ -15,6 +15,9 @@ CREATE DATABASE uvv WITH OWNER robson
     					 LC_COLLATE 'pt_BR.UTF-8'
     	      			 LC_CTYPE 'pt_BR.UTF-8'
     					 ALLOW_CONNECTIONS true;
+                         
+-- Criar um comentário geral para o banco de dados
+COMMENT ON DATABASE uvv IS 'Este banco de dados foi projetado para atender às necessidades das Lojas UVV, oferecendo uma estrutura robusta e eficiente para gerenciar suas operações de vendas. O banco de dados é composto por sete tabelas principais: produtos, lojas, pedidos, pedidos_itens, envios, estoques e clientes.';
 
 -- Conceder todas as permissões ao usuário.
 GRANT ALL PRIVILEGES ON DATABASE uvv TO robson;
@@ -326,6 +329,7 @@ CREATE TABLE pedidos_itens (
 COMMENT ON TABLE  pedidos_itens					IS 'Armazena informações sobre os itens individuais incluídos em cada pedido, como o produto associado, quantidade, preço unitário e outras informações relevantes para rastrear os detalhes do pedido.';
 COMMENT ON COLUMN pedidos_itens.produto_id 	   	IS 'Número de identificação do produto. Parte da chave primária da tabela pedido_itens. Chave estrangeira da tabela produtos.';
 COMMENT ON COLUMN pedidos_itens.pedido_id 	   	IS 'Número de identificação do pedido. Parte da chave primária da tabela pedido_itens. Chave estrangeira da tabela pedidos.';
+COMMENT ON COLUMN pedidos_itens.numero_da_linha IS 'Corresponde ao número da linha do respectivo produto.';
 COMMENT ON COLUMN pedidos_itens.preco_unitario  IS 'Preço por unidade do respectivo produto.';
 COMMENT ON COLUMN pedidos_itens.quantidade 	   	IS 'Número de produtos requisitados por pedido.';
 COMMENT ON COLUMN pedidos_itens.envio_id 	  	IS 'Número de identificação do envio. Chave estrangeira da tabela envios.';
